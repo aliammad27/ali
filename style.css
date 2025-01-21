@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: #134d4e;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  section#about {
+    text-align: center;
+    background: #f4f4f4;
+  }
+  
+  h1, h2 {
+    color: #134d4e;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    background: #134d4e;
+    color: white;
+    padding: 1rem;
+  }
+  
+  a {
+    color: #134d4e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

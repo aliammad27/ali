@@ -3,138 +3,508 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Ammad Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ali Ammad - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#aspirations">Future Goals</a></li>
-                <li><a href="#values">Core Values</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Ali Ammad</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+        <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Ali Ammad</h1>
+                <p class="text-lg mb-8">Passionate about creating innovative solutions and delivering high-quality software.</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-white text-blue-700 px-6 py-3 rounded-full font-bold hover:bg-blue-100 transition">Contact Me</a>
+                    <a href="#experience" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-blue-700 transition">View Experience</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="ali.jpeg" alt="Ali Ammad" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-xl">
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h1>Ali Ammad</h1>
-        <p>
-            Hi! I’m Ali Ammad, a tech enthusiast with a mission to combine innovation, strategy, and execution to create impactful products. 
-            From developing AI-powered educational platforms to designing healthcare apps, I am driven by the belief that technology can solve 
-            real-world problems. My experiences span software development, product management, and entrepreneurship, and I aim to leverage these 
-            skills to create solutions that make a difference.
-        </p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <h3>University of Pittsburgh</h3>
-                <p><strong>Bachelor of Science</strong> in Computer Science and Biological Sciences</p>
-                <p>Minor: Chemistry & Economics | Expected Graduation: April 2026</p>
-                <p>
-                    <em>Relevant Coursework:</em> Linear Algebra, Data Structures and Algorithms, Discrete Structures, 
-                    Discrete Mathematics, Economic Data Analysis, Applied Statistical Methods
-                </p>
-            </li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Technical:</strong> Python, JavaScript, React Native, Node.js, Express, MongoDB, MySQL, REST APIs, Data Visualization (Matplotlib, Streamlit), SQL</li>
-            <li><strong>Soft Skills:</strong> Leadership, Collaboration, Problem-Solving, Communication, Adaptability, Time Management, Critical Thinking, Decision-Making</li>
-        </ul>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Product-Led Certification (Pendo)</li>
-            <li>Product Management Basics Certification (Pendo)</li>
-            <li>Product Analytics Certification (Pendo)</li>
-            <li>Databases and SQL for Data Science with Python (IBM)</li>
-        </ul>
-    </section>
-    
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>NextGen Federal Systems</h3>
-            <p><strong>Software Development Engineer</strong> | August 2024 – Present</p>
-            <p>Onboarding to contribute to scalable software solutions, collaborating with cross-functional teams to meet client needs, and optimizing system performance.</p>
-        </div>
-        <div class="card">
-            <h3>Cognetice Services LLC</h3>
-            <p><strong>Software Development Intern & Product Intern</strong> | May 2024 – August 2024</p>
-            <p>Developed Intellecta, an AI-powered educational platform, increasing platform engagement by 15%. Designed real-time analytics dashboards using Streamlit, boosting educator productivity by 10%.</p>
-        </div>
-        <div class="card">
-            <h3>Thriveonics</h3>
-            <p><strong>Founder & Product Lead</strong> | May 2024 – Present</p>
-            <p>Created Healix, an AI-powered healthcare app. Collaborated with engineers to integrate GPT-powered medical consultation and designed a seamless React Native interface, enhancing usability by 10%.</p>
-        </div>
-        <div class="card">
-            <h3>Brighter Smile Foundation @ www.brightersmilefoundation.org</h3>
-            <p><strong>Founder & CEO</strong> | February 2023 – Present</p>
-            <p>Expanded global dental health initiatives, impacting over 10,000 individuals and distributing 30,000+ dental supplies. Launched chapters nationwide, enhancing outreach and creating lasting impact.</p>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="ali.jpeg" alt="About Ali Ammad" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-lg text-gray-700 mb-6">
+                        I'm an innovative software developer and entrepreneur dedicated to using technology for meaningful change. 
+                        I build impactful solutions—from AI-powered educational platforms to health tech innovations with Thriveonics 
+                        and dental care initiatives through the Brighter Smile Foundation. Currently studying data engineering and 
+                        biomedical sciences, I combine technical expertise with creative problem-solving to address real-world challenges. 
+                        I thrive on collaboration with like-minded professionals to shape a better future. Let's build the future together!
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        My expetrises range in artistic design, strategic planning, and innovative problem-solving, empowering me to integrate diverse skills into creative projects, technology development, and leadership initiatives that drive meaningful change and long-term success.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/" target="_blank" class="text-blue-600 hover:text-blue-800">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Intellecta</h3>
-                <p>An AI-powered educational platform transforming content creation and analytics, enhancing learning outcomes by 12%.</p>
-            </li>
-            <li>
-                <h3>Healix</h3>
-                <p>A healthcare app leveraging AI diagnostics to improve patient-doctor interactions and streamline medical consultations.</p>
-            </li>
-            <li>
-                <h3>CryptoTradingBot</h3>
-                <p>Developed a cryptocurrency trading bot using Python and machine learning to optimize trading strategies with real-time execution.</p>
-            </li>
-        </ul>
+    <!-- Experience Section -->
+<section id="experience" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Professional Experience</h2>
+        <div class="space-y-8">
+            <!-- Experience Item 1: NextGen Federal Systems -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Software Development Engineer</h3>
+                    <div class="text-blue-600 font-semibold">Aug 2024 – Present</div>
+                </div>
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">NextGen Federal Systems – Pittsburgh, PA</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li>Completed the onboarding phase and am now ready to contribute to key software development projects using Docker, Linux, Kubernetes, and a range of Python libraries.</li>
+                    <li>Gained hands-on experience with virtualization and system management tools in preparation for next-generation cloud solutions.</li>
+                    <li>Anticipated responsibilities include developing scalable software solutions, collaborating with cross-functional teams, and optimizing system performance to meet client needs.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience Item 2: Cognitive Services LLC -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Product Engineer Intern</h3>
+                    <div class="text-blue-600 font-semibold">May 2024 – Aug 2024</div>
+                </div>
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">Cognitive Services LLC – Pittsburgh, PA</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li>Assisted in the development of Intellecta, an AI-powered educational platform, leveraging Python, machine learning, and FAISS for efficient vector database-based context retrieval and similarity search, contributing to a 50% increase in platform engagement.</li>
+                    <li>Collaborated with educators, students, and end-users through surveys, interviews, and usability testing to gather insights that directly shaped product features and boosted overall platform usability.</li>
+                    <li>Contributed to the design and implementation of real-time analytics dashboards using Streamlit, providing actionable insights that improved educator productivity by 30% through visualized student performance data.</li>
+                    <li>Assisted in the development of adaptive learning systems using vector databases to store embeddings and index data, tailoring educational content for personalized learning experiences, resulting in a 100% improvement in learning outcomes.</li>
+                    <li>Conducted targeted user research through comprehensive surveys, usability testing, and interviews to refine AI-powered features, aligning product enhancements with evolving educational needs.</li>
+                    <li>Contributed to product strategy and cross-functional collaboration, assisting in feature prioritization based on user insights, business goals, and engineering constraints.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience Item 3: Thriveonics -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Founding Engineer &amp; Product Lead</h3>
+                    <div class="text-blue-600 font-semibold">May 2024 – Present</div>
+                </div>
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">Thriveonics – Pittsburgh, PA</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li>Led the full-stack development of Healix, a telehealth platform integrating real-time chat, video consultations, AI-driven medical summaries, and appointment scheduling.</li>
+                    <li>Designed and implemented a scalable backend architecture using Firebase, replacing Node.js (Express) with MongoDB for improved instant sync and faster data retrieval.</li>
+                    <li>Integrated ChatGPT for AI-powered medical conversation analysis, generating real-time insights and structured summaries to improve doctor-patient communication.</li>
+                    <li>Developed a role-based unified platform for doctors and patients with React Native (Expo), ensuring secure access and a seamless UX.</li>
+                    <li>Implemented real-time messaging using WebSockets and MongoDB, enabling secure, encrypted communication between healthcare providers and patients.</li>
+                    <li>Optimized AI-powered reports by leveraging the ChatGPT API, reducing manual documentation time for doctors.</li>
+                    <li>Collaborated with cross-functional teams—including designers, healthcare professionals, and engineers—to manage the product roadmap and prioritize features.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience Item 4: Brighter Smile Foundation -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Founder &amp; CEO</h3>
+                    <div class="text-blue-600 font-semibold">Feb 2023 – Present</div>
+                </div>
+                <h4 class="text-lg font-semibold text-gray-700 mb-3">Brighter Smile Foundation – Pittsburgh, PA</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                    <li>Founded and expanded a global non-profit dedicated to improving dental health, impacting over 10,000 individuals through educational initiatives and distributing 30,000+ dental supplies to underserved communities worldwide.</li>
+                    <li>Spearheaded the development of comprehensive educational programs and awareness campaigns, enhancing dental care access and knowledge for marginalized populations.</li>
+                    <li>Launched 11 regional chapters across the U.S., significantly increasing the foundation's reach and responsiveness to local dental health needs.</li>
+                    <li>Managed 60+ employees, leading cross-functional teams to execute high-impact dental health programs globally.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Education Section -->
+<section id="education" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Education</h2>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-university text-3xl text-blue-600 mr-4"></i>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">University of Pittsburgh</h3>
+                    <p class="text-gray-600">Bachelor of Science in Data Engineering, Biomedical Sciences, Global Impact</p>
+                    <p class="text-gray-600">Expected Graduation: December 2025</p>
+                </div>
+            </div>
+            <p class="text-gray-700 mb-6">
+                School of Computing and Information Scholar at University of Pittsburgh.
+            </p>
+            <div>
+                <h4 class="text-lg font-bold text-gray-800 mb-2">Relevant Coursework:</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                    <li>Linear Algebra and Matrices</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Discrete Structures &amp; Discrete Mathematics</li>
+                    <li>Economic Data Analysis</li>
+                    <li>Applied Statistical Methods</li>
+                    <li>Analytic Geometry and Calculus 1</li>
+                    <li>Physics I and II</li>
+                    <li>Intermediate Programming</li>
+                    <li>Object Oriented Programming</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+   <!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Skills</h2>
+        
+        <!-- Technical Skills -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Skill Item: Python -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fab fa-python text-blue-500 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">Python</h4>
+                    </div>
+                    <p class="text-gray-600">Proficient</p>
+                </div>
+                <!-- Skill Item: JavaScript -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fab fa-js-square text-yellow-500 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">JavaScript</h4>
+                    </div>
+                    <p class="text-gray-600">Proficient</p>
+                </div>
+                <!-- Skill Item: React Native -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fab fa-react text-blue-400 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">React Native</h4>
+                    </div>
+                    <p class="text-gray-600">Experienced</p>
+                </div>
+                <!-- Skill Item: Node.js/Express -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fab fa-node-js text-green-600 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">Node.js/Express</h4>
+                    </div>
+                    <p class="text-gray-600">Experienced</p>
+                </div>
+                <!-- Skill Item: MongoDB & MySQL -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-database text-gray-700 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">MongoDB &amp; MySQL</h4>
+                    </div>
+                    <p class="text-gray-600">Experienced</p>
+                </div>
+                <!-- Skill Item: REST APIs -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-plug text-indigo-600 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">REST APIs</h4>
+                    </div>
+                    <p class="text-gray-600">Proficient</p>
+                </div>
+                <!-- Skill Item: Data Visualization -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-chart-bar text-purple-600 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">Data Visualization</h4>
+                    </div>
+                    <p class="text-gray-600">Matplotlib, Streamlit</p>
+                </div>
+                <!-- Skill Item: SQL -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-database text-gray-800 text-2xl mr-2"></i>
+                        <h4 class="font-semibold">SQL</h4>
+                    </div>
+                    <p class="text-gray-600">Proficient</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Soft Skills -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Soft Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Leadership
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Team Collaboration
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Problem-Solving
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Communication
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Adaptability
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Time Management
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Critical Thinking
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>Decision-Making
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Certifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-800">Product-Led Certification</h4>
+                    <p class="text-gray-600">Pendo</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-800">Product Management Basics</h4>
+                    <p class="text-gray-600">Pendo</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-800">SQL Essentials</h4>
+                    <p class="text-gray-600">CEUs</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-800">Product Analytics Certification</h4>
+                    <p class="text-gray-600">Pendo</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-800">Databricks Fundamentals</h4>
+                    <p class="text-gray-600">Databricks</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-gray-800">Generative AI Fundamentals</h4>
+                    <p class="text-gray-600">DataBricks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Project Card: Brighter Smile Foundation -->
+        <a href="https://brightersmilefoundation.org" 
+           target="_blank" 
+           class="bg-gray-100 rounded-lg overflow-hidden shadow-md transition transform hover:-translate-y-2 block">
+          <!-- Header Image or Logo (optional) -->
+          <!-- You can uncomment and replace the placeholder below if you prefer a single header image:
+          <img 
+            src="bsf.png" 
+            alt="Brighter Smile Foundation" 
+            class="w-full h-48 object-cover"
+          />
+          -->
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Brighter Smile Foundation</h3>
+            <p class="text-gray-600 mb-4">
+              A global non-profit dedicated to improving dental health. The foundation has impacted 
+              over 10,000 individuals through educational initiatives and distributed over 30,000 
+              dental supplies to underserved communities worldwide.
+            </p>
+            <!-- Images Grid for BSF -->
+            <div class="grid grid-cols-1 gap-4">
+              <!-- BSF Logo or Main Image -->
+              <img 
+                src="bsf.png" 
+                alt="Brighter Smile Foundation Logo" 
+                class="w-full h-auto rounded shadow"
+              />
+              <!-- Website Screenshot(s) -->
+              <img 
+                src="website.png" 
+                alt="BSF Website Screenshots" 
+                class="w-full h-auto rounded shadow"
+              />
+              <!-- Social Media Presence Screenshot(s) -->
+              <img 
+                src="social.png" 
+                alt="BSF Social Media Presence" 
+                class="w-full h-auto rounded shadow"
+              />
+            </div>
+          </div>
+        </a>
+        
+        <!-- Project Card: Thriveonics -->
+        <a href="https://thriveonics.com" 
+           target="_blank" 
+           class="bg-gray-100 rounded-lg overflow-hidden shadow-md transition transform hover:-translate-y-2 block">
+          <!-- Video -->
+          <video class="w-full h-48 object-cover" controls>
+            <source src="telehealth.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Thriveonics</h3>
+            <p class="text-gray-600 mb-4">
+              Your go-to health companion that combines cutting-edge AI and medical expertise 
+              to keep you on top of your well-being. Whether it's managing appointments, 
+              getting a quick AI-driven diagnosis, or tracking health trends, Thriveonics 
+              makes health management effortless and personalized.
+            </p>
+            <!-- Additional Screenshot for Thriveonics -->
+            <div class="mt-4">
+              <img 
+                src="thrive.png" 
+                alt="Thriveonics App Screenshot" 
+                class="w-full h-auto rounded shadow"
+              />
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+  
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Send Message</button>
+                    </form>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Location</h4>
+                                <p class="text-gray-600">Pittsburgh, PA</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">aammad921@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+1 (412) 393-9269</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-blue-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Working Hours</h4>
+                                <p class="text-gray-600">Sun - Sat: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://linkedin.com/in/aammad" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="aspirations">
-        <h2>Future Goals</h2>
-        <p>
-            I aspire to lead in the tech industry by creating innovative products that solve critical challenges in healthcare, education, and finance. 
-            My goal is to become a Product Manager at the intersection of AI and user-centered design, where I can continue to innovate, inspire, and 
-            impact communities worldwide.
-        </p>
-    </section>
-
-    <section id="values">
-        <h2>Core Values</h2>
-        <ul>
-            <li><strong>Innovation:</strong> I believe in leveraging technology to solve complex problems and drive meaningful change.</li>
-            <li><strong>Collaboration:</strong> I thrive in team environments where diverse perspectives lead to creative solutions.</li>
-            <li><strong>Empathy:</strong> Building solutions that address real-world challenges and improve lives is at the heart of my work.</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:aammad921@gmail.com">aammad921@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aammad/">www.linkedin.com/in/aammad</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Ali Ammad. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Ali Ammad. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
